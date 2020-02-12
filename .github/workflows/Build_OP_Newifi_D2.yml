@@ -6,13 +6,13 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: OpenWrt_Newifi_D2
+name: OpenWrt-newifi-d2
 on: 
   release:
     types: [published]
-#  push:
-#    branches: 
-#      - master
+  push:
+    branches: 
+      - master
     paths:
       - '.config'
 #  schedule:
