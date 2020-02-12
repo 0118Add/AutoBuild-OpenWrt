@@ -10,9 +10,9 @@ name: OpenWrt_Newifi_D2
 on: 
   release:
     types: [published]
-  push:
-    branches: 
-      - master
+#  push:
+#    branches: 
+#      - master
     paths:
       - '.config'
 #  schedule:
