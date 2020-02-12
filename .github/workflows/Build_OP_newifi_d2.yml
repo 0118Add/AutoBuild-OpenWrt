@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: OpenWrt-n1
+name: OpenWrt-newifi-d2
 on: 
   release:
     types: [published]
@@ -46,7 +46,7 @@ jobs:
         sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
     - name: Clone source code
       env: 
-        REPO_URL: https://github.com/coolsnowwolf/lede.git
+        REPO_URL: https://github.com/project-openwrt/openwrt.git
         REPO_BRANCH: master
       run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
 
